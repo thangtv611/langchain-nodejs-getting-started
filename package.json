@@ -1,0 +1,24 @@
+{
+  "name": "langchain-nodejs-getting-started",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.2.11",
+    "@langchain/openai": "^0.1.3",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.2.5"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true
+  }
+}
