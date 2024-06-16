@@ -13,18 +13,9 @@ const { createHistoryAwareRetriever } = require('langchain/chains/history_aware_
 const { HumanMessage, AIMessage } = require('@langchain/core/messages');
 
 const config = require('./config');
+const utils = require('./utils');
 
-function executor(fn) {
-    (async () => {
-        try {
-            fn();
-        } catch (err) {
-            console.error('[ERROR]: ', err);
-        }
-    })();
-}
-
-executor(async () => {
+utils.executor(async () => {
     const chatModel = new ChatOpenAI({
         ...config.openAI,
     });
